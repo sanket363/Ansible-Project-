@@ -15,5 +15,5 @@
 
     - name: Configure NGINX to serve webpage
       copy:
-        src: index.html
+        src: /path/to/index.html
         dest: /var/www/html
