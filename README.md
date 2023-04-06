@@ -2,6 +2,10 @@
 
 ## To Create the Ansible Project which hosts the webserver on the two of its Nodes follow below steps
 
+## Prerequisites:
+3 Ubuntu Machines
+Basic Understanding of Ansible
+
 ### Step 1
 
 Create 3 AWS EC2 machines with Ubuntu OS and with Same Key pair
@@ -45,3 +49,4 @@ deploying a sample webpage using the ansible playbook for this run below command
 anisble-playbook playbook-name.yml
 ```
 
+## Congratulations your Website is been hosted on the other 2 servers you can check them by navigating to the publicip:80 of the webbrowser
