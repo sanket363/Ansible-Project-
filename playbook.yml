@@ -3,17 +3,17 @@
   hosts: servers
   become: true
   tasks:
-    - name: Install nginx
+    - name: Install NGINX
       apt:
         name: nginx
         state: latest
 
-    - name: Start nginx
-      service:
-        name: nginx
-        state: started
+    - name: Create backup of default NGINX configuration file
+      command: cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+      args:
+        creates: /etc/nginx/nginx.conf.bak
 
-    - name: Deploy webpage
+    - name: Configure NGINX to serve webpage
       copy:
         src: index.html
         dest: /var/www/html
