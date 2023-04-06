@@ -4,6 +4,7 @@
 
 ## Prerequisites:
 3 Ubuntu Machines
+
 Basic Understanding of Ansible
 
 ### Step 1
